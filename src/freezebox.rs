@@ -61,7 +61,6 @@ use core::{mem, ptr};
 /// resources.name.lazy_init("Hello!".to_string());
 /// func();
 /// ```
-
 pub struct FreezeBox<T> {
     inner: AtomicPtr<T>,
     phantom: PhantomData<T>,
